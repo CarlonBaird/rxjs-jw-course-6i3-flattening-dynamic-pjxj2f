@@ -6,6 +6,8 @@ const endpointInput: HTMLInputElement =
   document.querySelector('input#endpoint');
 const fetchButton = document.querySelector('button#fetch');
 
+//search: name, food
+
 fromEvent(fetchButton, 'click')
   .pipe(
     map(() => endpointInput.value),
